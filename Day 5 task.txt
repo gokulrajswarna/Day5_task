@@ -1,0 +1,62 @@
+Iterate JSON using for in, for, for Each, for of;
+**************************
+for in:
+-------
+var student = {
+    name: "Gokulraj",
+    age: 29,
+    year: 2022,
+    address: "san fransico"
+};
+for (var a in student) {
+    console.log(student[a]);
+}
+
+for loop
+----------
+var student = {
+    "Records":[
+        {"name": "Gokulraj","age": 29,"year":"2022","address": "san fransico"}]
+                                                      
+};
+for (var i=0;i<student.Records.length;i++){
+    console.log(student.Records[i]);
+} 
+
+for Each:
+----------
+const student = {
+        "name": "Gokulraj","age": 29,"year":"2022","address": "san fransico"
+};
+Object.keys(student).forEach(function(k,v){
+    console.log(k+':'+v);
+    
+});
+
+for of :
+--------
+var student = {
+        "name": "Gokulraj","age": 29,"year":"2022","address": "san fransico"
+};
+let res="";
+for (let a of student.name) {
+    res += a;
+}
+    console.log(res);
+
+
+Resume in JSON Format
+*********************
+
+{
+"Name"      :"N.Gokulraj"
+"Mailid"    :"gokulrajnan92@gmail.com"
+"phoneno"   :"9524811678" 
+"Fathername":"Nagarajan"
+"Education" :"B.E"
+"Year of passing":"2015"
+"College Name" :"SRG Engineering college"
+"Percentage" :"80"
+"Language"  :"Javascript"
+"Address" :"Namakkal"
+}
